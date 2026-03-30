@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Savana South | Eirone Delantar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-[#f8fbff] text-slate-900 font-[Poppins]">
+  <header class="fixed top-0 inset-x-0 z-50 bg-white border-b border-black/5">
+    <div class="max-w-6xl mx-auto px-4 md:px-6">
+      <div class="flex h-20 items-center justify-between">
+        <div class="flex items-center flex-shrink-0">
+          <a href="index.html" class="inline-block">
+            <img src="assets/logo3.png" alt="Logo" class="h-16 md:h-20 w-auto transition-transform duration-300 hover:scale-105">
+          </a>
+        </div>
+        <div class="flex items-center justify-center flex-1">
+          <img src="assets/alta.jpg" alt="Alta" class="h-12 md:h-16 w-auto">
+        </div>
+        <nav class="hidden sm:flex items-center gap-6 md:gap-8 text-sm font-semibold text-slate-900 flex-shrink-0">
+          <a href="index.html" class="py-1 border-b-2 border-transparent hover:border-blue-600 transition">Home</a>
+          <a href="index.html#about" class="py-1 border-b-2 border-transparent hover:border-blue-600 transition">About</a>
+          <div class="relative">
+            <button id="desktopDropdownBtn" class="flex items-center gap-1 py-1 border-b-2 border-transparent hover:border-blue-600 transition text-sm font-semibold text-slate-900" type="button">
+              Developer <span class="text-xs">▾</span>
+            </button>
+            <div id="desktopDropdownMenu" class="absolute left-0 top-full mt-3 hidden bg-white rounded-xl shadow-xl min-w-[200px] max-h-[70vh] overflow-y-auto z-50">
+                            <a href="developer-barcelona.html" class="block px-4 py-2.5 text-sm text-slate-900 hover:bg-slate-100 ">
+                Barcelona              </a>
+                            <a href="developer-caya_homes.html" class="block px-4 py-2.5 text-sm text-slate-900 hover:bg-slate-100 ">
+                Caya Homes              </a>
+                            <a href="developer-lynville.html" class="block px-4 py-2.5 text-sm text-slate-900 hover:bg-slate-100 ">
+                Lynville              </a>
+                            <a href="developer-lynville_heights.html" class="block px-4 py-2.5 text-sm text-slate-900 hover:bg-slate-100 ">
+                Lynville Heights              </a>
+                            <a href="developer-santevi.html" class="block px-4 py-2.5 text-sm text-slate-900 hover:bg-slate-100 ">
+                Santevi              </a>
+                            <a href="developer-savana_south.html" class="block px-4 py-2.5 text-sm text-slate-900 hover:bg-slate-100 bg-blue-50 text-blue-700">
+                Savana South              </a>
+                            <a href="developer-sentrina.html" class="block px-4 py-2.5 text-sm text-slate-900 hover:bg-slate-100 ">
+                Sentrina              </a>
+                            <a href="developer-sentro.html" class="block px-4 py-2.5 text-sm text-slate-900 hover:bg-slate-100 ">
+                Sentro              </a>
+                          </div>
+          </div>
+        </nav>
+        <button id="mobileMenuBtn" type="button" aria-expanded="false" aria-controls="mobileMenu" class="md:hidden flex flex-col items-center justify-center p-2 text-slate-900 hover:bg-slate-100 rounded-md transition">
+          <span class="sr-only">Open main menu</span>
+          <svg id="hamburgerIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" class="size-6 transition-all duration-300">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <svg id="closeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" class="size-6 hidden absolute transition-all duration-300">
+            <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-black/5 shadow-lg transition-all duration-300">
+      <div class="max-w-6xl mx-auto px-4 md:px-6 py-4 flex flex-col gap-2 space-y-1">
+        <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-900 hover:bg-slate-50 transition">Home</a>
+        <a href="index.html#about" class="block px-3 py-2 rounded-md text-base font-medium text-slate-900 hover:bg-slate-50 transition">About</a>
+        <div class="px-3 py-2">
+          <p class="text-sm font-semibold text-slate-600 mb-2">Developers</p>
+          <div class="flex flex-col gap-1 ml-2">
+                        <a href="developer-barcelona.html" class="block text-sm py-1.5 px-2 rounded text-slate-900 hover:bg-slate-100 transition">Barcelona</a>
+                        <a href="developer-caya_homes.html" class="block text-sm py-1.5 px-2 rounded text-slate-900 hover:bg-slate-100 transition">Caya Homes</a>
+                        <a href="developer-lynville.html" class="block text-sm py-1.5 px-2 rounded text-slate-900 hover:bg-slate-100 transition">Lynville</a>
+                        <a href="developer-lynville_heights.html" class="block text-sm py-1.5 px-2 rounded text-slate-900 hover:bg-slate-100 transition">Lynville Heights</a>
+                        <a href="developer-santevi.html" class="block text-sm py-1.5 px-2 rounded text-slate-900 hover:bg-slate-100 transition">Santevi</a>
+                        <a href="developer-savana_south.html" class="block text-sm py-1.5 px-2 rounded text-slate-900 hover:bg-slate-100 transition">Savana South</a>
+                        <a href="developer-sentrina.html" class="block text-sm py-1.5 px-2 rounded text-slate-900 hover:bg-slate-100 transition">Sentrina</a>
+                        <a href="developer-sentro.html" class="block text-sm py-1.5 px-2 rounded text-slate-900 hover:bg-slate-100 transition">Sentro</a>
+                      </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="pt-32 md:pt-40 pb-10 md:pb-12 px-4">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-14 items-center">
+      <div class="text-center md:text-left">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4">
+          <span class="text-white bg-gradient-to-r from-blue-700 to-blue-500 inline-block px-6 py-4 rounded-3xl shadow-xl">
+            SAVANA SOUTH          </span>
+        </h1>
+              </div>
+      <div class="flex justify-center md:justify-end">
+                  <div class="w-full max-w-xl md:max-w-none rounded-3xl border border-slate-200 bg-white shadow-sm p-8 text-center text-sm text-slate-500">No hero media yet.</div>
+              </div>
+    </div>
+  </section>
+
+  
+  
+    <section class="py-12 md:py-16 px-4 bg-white">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-semibold text-center mb-10">Offers</h2>
+      <p class="text-center text-slate-500 text-sm">No offers added yet for this developer.</p>
+    </div>
+  </section>
+  
+  <section class="py-12 md:py-16 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-semibold text-center mb-8">Location</h2>
+              <div class="rounded-2xl overflow-hidden shadow-xl bg-slate-200 h-[300px] md:h-[400px] flex items-center justify-center">
+          <p class="text-slate-500 text-sm">Map not configured for this page.</p>
+        </div>
+          </div>
+  </section>
+
+  <footer class="bg-blue-700 text-white py-8 px-4">
+    <div class="text-center text-xs md:text-sm opacity-90">Eirone Y. Delantar - Sales Manager/Sales Person @ ALTA REALTY CORPORATION</div>
+  </footer>
+
+  <div id="offerModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 bg-black/60" aria-hidden="true">
+    <div class="bg-white rounded-2xl shadow-2xl w-full max-w-5xl max-h-[80vh] md:max-h-[90vh] overflow-y-auto md:overflow-hidden flex flex-col md:flex-row">
+      <div class="md:w-1/2 flex-shrink-0 bg-slate-900 flex items-center justify-center min-h-[240px]">
+        <div id="offerModalMain" class="w-full aspect-video md:aspect-[9/16] max-h-[55vh] md:max-h-none flex items-center justify-center bg-black"></div>
+      </div>
+      <div class="md:w-1/2 flex flex-col p-6 overflow-y-auto">
+        <button type="button" id="offerModalClose" class="ml-auto w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-slate-100 mb-4" aria-label="Close">&times;</button>
+        <h2 id="offerModalTitle" class="text-xl font-semibold text-slate-900"></h2>
+        <p id="offerModalDesc" class="text-sm text-slate-600 mt-2 flex-1"></p>
+        <p class="text-xs font-medium text-slate-500 mt-4 mb-2">Photos &amp; videos</p>
+        <div id="offerModalThumbs" class="flex flex-wrap gap-2 mb-6"></div>
+        <button type="button" id="offerInquireBtn" class="inline-block w-full text-center py-3 px-4 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 transition">Inquire Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="contactModal" class="fixed inset-0 z-[120] hidden items-center justify-center p-4 bg-black/60" aria-hidden="true">
+    <div class="bg-white rounded-2xl shadow-2xl w-full max-w-md max-h-[80vh] overflow-y-auto p-4">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="text-lg font-semibold text-slate-900">Contact Options</h3>
+        <button type="button" id="contactModalClose" class="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-slate-100" aria-label="Close">&times;</button>
+      </div>
+      <div id="contactList" class="space-y-2"></div>
+    </div>
+  </div>
+
+  <div id="albumModal" class="fixed inset-0 z-[110] hidden flex items-center justify-center p-4 bg-black/60" aria-hidden="true">
+    <div class="bg-white rounded-2xl shadow-2xl w-full max-w-6xl max-h-[80vh] md:max-h-[90vh] overflow-y-auto md:overflow-hidden flex flex-col md:flex-row">
+      <div class="md:w-2/3 flex-shrink-0 bg-slate-900 flex items-center justify-center min-h-[240px]">
+        <div id="albumModalMain" class="w-full aspect-video md:aspect-[16/9] max-h-[55vh] md:max-h-none flex items-center justify-center bg-black"></div>
+      </div>
+      <div class="md:w-1/3 flex flex-col p-6 overflow-y-auto">
+        <button type="button" id="albumModalClose" class="ml-auto w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-slate-100 mb-4" aria-label="Close">&times;</button>
+        <h2 id="albumModalTitle" class="text-xl font-semibold text-slate-900"></h2>
+        <p class="text-xs font-medium text-slate-500 mt-4 mb-2">Album items</p>
+        <div id="albumModalThumbs" class="grid grid-cols-3 md:grid-cols-2 gap-2 overflow-y-auto pr-1" style="max-height: 52vh;"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+  (function() {
+    var offerData = [];
+    var numCards = 0;
+
+    if (numCards > 0) {
+      var carousel = document.getElementById('offersCarousel');
+      var slides = document.getElementById('offersSlides');
+      var cards = document.querySelectorAll('.offers-card');
+      var prevBtn = document.getElementById('offersPrev');
+      var nextBtn = document.getElementById('offersNext');
+
+      if (carousel && slides && cards.length) {
+        var offersIndex = 0;
+        var totalOffers = cards.length;
+        var md = function() { return window.matchMedia('(min-width: 768px)').matches; };
+
+        var dotEls = [];
+        for (var d = 0; d < totalOffers; d++) {
+          var dot = document.getElementById('offersDot' + d);
+          if (dot) dotEls.push(dot);
+        }
+
+        function getMaxIndex() {
+          return md() ? Math.max(0, totalOffers - 3) : totalOffers - 1;
+        }
+
+        function updateOffersCarousel() {
+          var isDesktop = md();
+          var maxIdx = getMaxIndex();
+          offersIndex = Math.min(offersIndex, maxIdx);
+          if (isDesktop) {
+            var cardPct = 100 / 3;
+            slides.style.transform = 'translateX(-' + (offersIndex * cardPct) + 'vw)';
+          } else {
+            slides.style.transform = 'translateX(-' + (offersIndex * 100) + 'vw)';
+          }
+          dotEls.forEach(function(dot, i) {
+            if (!dot) return;
+            if (i === offersIndex) {
+              dot.classList.add('bg-blue-600');
+              dot.classList.remove('bg-slate-300');
+            } else {
+              dot.classList.remove('bg-blue-600');
+              dot.classList.add('bg-slate-300');
+            }
+          });
+        }
+
+        function goOffers(delta) {
+          var maxIdx = getMaxIndex();
+          offersIndex = Math.max(0, Math.min(maxIdx, offersIndex + delta));
+          updateOffersCarousel();
+        }
+
+        if (prevBtn) prevBtn.addEventListener('click', function() { goOffers(-1); });
+        if (nextBtn) nextBtn.addEventListener('click', function() { goOffers(1); });
+        dotEls.forEach(function(dot, i) {
+          if (dot) dot.addEventListener('click', function() { offersIndex = i; updateOffersCarousel(); });
+        });
+
+        function setSlidesWidth() {
+          if (md()) {
+            slides.style.width = '100%';
+            document.querySelectorAll('.offers-card').forEach(function(el) {
+              el.style.width = (100 / 3) + '%';
+            });
+          } else {
+            slides.style.width = (totalOffers * 100) + '%';
+            document.querySelectorAll('.offers-card').forEach(function(el) {
+              el.style.width = (100 / totalOffers) + '%';
+            });
+          }
+        }
+
+        setSlidesWidth();
+        updateOffersCarousel();
+        window.addEventListener('resize', function() {
+          setSlidesWidth();
+          updateOffersCarousel();
+        });
+      }
+    }
+
+    var modal = document.getElementById('offerModal');
+    var mainContainer = document.getElementById('offerModalMain');
+    var titleEl = document.getElementById('offerModalTitle');
+    var descEl = document.getElementById('offerModalDesc');
+    var thumbsEl = document.getElementById('offerModalThumbs');
+    var closeBtn = document.getElementById('offerModalClose');
+    var inquireBtn = document.getElementById('offerInquireBtn');
+
+    var contactModal = document.getElementById('contactModal');
+    var contactList = document.getElementById('contactList');
+    var contactModalClose = document.getElementById('contactModalClose');
+    var currentContacts = [];
+
+    function normalizePhone(raw) {
+      return String(raw || '').replace(/[^\d+]/g, '');
+    }
+
+    function buildContactHref(d) {
+      var type = (d.contact_type || '').toLowerCase();
+      var val = String(d.contact_value || '').trim();
+      if (!val) return '';
+
+      if (type === 'gmail' || type === 'outlook') {
+        return 'mailto:' + val + '?subject=' + encodeURIComponent('Inquiry - ' + (d.title || ''));
+      }
+      if (type === 'phone') {
+        return 'tel:' + normalizePhone(val);
+      }
+      if (type === 'whatsapp') {
+        var num = normalizePhone(val).replace(/^\+/, '');
+        return 'https://wa.me/' + num;
+      }
+      if (type === 'viber') {
+        var n = normalizePhone(val);
+        return 'viber://chat?number=' + encodeURIComponent(n);
+      }
+      return val;
+    }
+
+    function contactIconClass(type) {
+      switch (type) {
+        case 'facebook': return 'fa-brands fa-facebook-f text-blue-600';
+        case 'whatsapp': return 'fa-brands fa-whatsapp text-green-500';
+        case 'viber': return 'fa-brands fa-viber text-purple-500';
+        case 'gmail': return 'fa-solid fa-envelope text-red-500';
+        case 'outlook': return 'fa-solid fa-envelope text-blue-500';
+        case 'instagram': return 'fa-brands fa-instagram text-pink-500';
+        case 'tiktok': return 'fa-brands fa-tiktok text-black';
+        case 'phone': return 'fa-solid fa-phone text-emerald-600';
+        default: return 'fa-solid fa-link text-slate-500';
+      }
+    }
+
+    function setMainMedia(item) {
+      mainContainer.innerHTML = '';
+      if (item.type === 'image') {
+        var img = document.createElement('img');
+        img.src = item.src;
+        img.alt = '';
+        img.className = 'w-full h-full object-contain';
+        mainContainer.appendChild(img);
+      } else {
+        var video = document.createElement('video');
+        video.src = item.src;
+        video.controls = true;
+        video.className = 'w-full h-full object-contain';
+        video.playsInline = true;
+        video.muted = true;
+        video.autoplay = true;
+        mainContainer.appendChild(video);
+      }
+    }
+
+    function openOffer(id) {
+      var data = offerData[id];
+      if (!data) return;
+      titleEl.textContent = data.title;
+      descEl.textContent = data.description || '';
+
+      currentContacts = [];
+      if (data.contacts && data.contacts.length) {
+        currentContacts = data.contacts.slice();
+      } else if (data.contact_person || data.contact_value) {
+        currentContacts = [data];
+      }
+
+      if (inquireBtn) {
+        if ((data.kind || '') === 'amenity') {
+          inquireBtn.classList.add('hidden');
+        } else {
+          inquireBtn.classList.remove('hidden');
+          if (!currentContacts.length) {
+            inquireBtn.textContent = 'Inquire Now (no contact info yet)';
+            inquireBtn.disabled = true;
+            inquireBtn.classList.add('opacity-60', 'cursor-not-allowed');
+          } else {
+            inquireBtn.textContent = 'Inquire Now';
+            inquireBtn.disabled = false;
+            inquireBtn.classList.remove('opacity-60', 'cursor-not-allowed');
+          }
+        }
+      }
+
+      setMainMedia(data.media[0]);
+      thumbsEl.innerHTML = '';
+      data.media.forEach(function(item, index) {
+        var wrap = document.createElement('button');
+        wrap.type = 'button';
+        wrap.className = 'w-16 h-16 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-500 focus:border-blue-500 focus:outline-none flex-shrink-0';
+        if (item.type === 'image') {
+          var img = document.createElement('img');
+          img.src = item.src;
+          img.alt = '';
+          img.className = 'w-full h-full object-cover';
+          wrap.appendChild(img);
+        } else {
+          var vid = document.createElement('video');
+          vid.src = item.src;
+          vid.muted = true;
+          vid.playsInline = true;
+          vid.className = 'w-full h-full object-cover';
+          wrap.appendChild(vid);
+        }
+        wrap.addEventListener('click', function() {
+          setMainMedia(item);
+          thumbsEl.querySelectorAll('button').forEach(function(b, i) {
+            b.classList.toggle('border-blue-500', i === index);
+            b.classList.toggle('border-slate-200', i !== index);
+          });
+        });
+        if (index === 0) wrap.classList.add('border-blue-500');
+        thumbsEl.appendChild(wrap);
+      });
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      modal.setAttribute('aria-hidden', 'false');
+    }
+
+    function closeOffer() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      modal.setAttribute('aria-hidden', 'true');
+      var v = mainContainer.querySelector('video');
+      if (v) v.pause();
+    }
+
+    function openContactModal() {
+      contactList.innerHTML = '';
+      if (!currentContacts || !currentContacts.length) {
+        var msg = document.createElement('div');
+        msg.className = 'px-3 py-2.5 rounded-xl border border-slate-200 bg-slate-50 text-sm text-slate-700';
+        msg.textContent = 'No contact options configured for this offer.';
+        contactList.appendChild(msg);
+      }
+      currentContacts.forEach(function(c) {
+        var type = (c.contact_type || '').toLowerCase();
+        var href = buildContactHref(c);
+        if (!href) return;
+        var row = document.createElement('button');
+        row.type = 'button';
+        row.className = 'w-full flex items-center gap-3 px-3 py-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-left';
+        row.innerHTML =
+          '<div class="w-9 h-9 flex items-center justify-center rounded-full bg-slate-100">' +
+            '<i class="' + contactIconClass(type) + ' text-base"></i>' +
+          '</div>' +
+          '<div class="flex-1">' +
+            '<p class="text-sm font-semibold text-slate-900">' + (c.contact_person || 'Contact') + '</p>' +
+            '<p class="text-xs text-slate-500 break-all">' + (c.contact_value || '') + '</p>' +
+          '</div>';
+        row.addEventListener('click', function() {
+          var isExternal = href.startsWith('http://') || href.startsWith('https://');
+          if (isExternal) {
+            window.open(href, '_blank');
+          } else {
+            window.location.href = href;
+          }
+        });
+        contactList.appendChild(row);
+      });
+      contactModal.classList.remove('hidden');
+      contactModal.classList.add('flex');
+      contactModal.setAttribute('aria-hidden', 'false');
+    }
+
+    function closeContactModal() {
+      contactModal.classList.add('hidden');
+      contactModal.classList.remove('flex');
+      contactModal.setAttribute('aria-hidden', 'true');
+    }
+
+    document.querySelectorAll('[data-offer]').forEach(function(el) {
+      el.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        if (typeof e.stopImmediatePropagation === 'function') e.stopImmediatePropagation();
+        openOffer(el.getAttribute('data-offer'));
+      }, true);
+      el.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openOffer(el.getAttribute('data-offer'));
+        }
+      });
+    });
+    if (closeBtn) closeBtn.addEventListener('click', closeOffer);
+    if (modal) modal.addEventListener('click', function(e) {
+      if (e.target === modal) closeOffer();
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        if (contactModal.classList && contactModal.classList.contains('flex')) {
+          closeContactModal();
+        } else if (modal && modal.classList.contains('flex')) {
+          closeOffer();
+        }
+      }
+    });
+
+    if (inquireBtn) {
+      inquireBtn.addEventListener('click', function() {
+        openContactModal();
+      });
+    }
+    if (contactModalClose) {
+      contactModalClose.addEventListener('click', closeContactModal);
+    }
+    if (contactModal) {
+      contactModal.addEventListener('click', function(e) {
+        if (e.target === contactModal) closeContactModal();
+      });
+    }
+
+    var albumData = [];
+    var albumModal = document.getElementById('albumModal');
+    var albumMain = document.getElementById('albumModalMain');
+    var albumTitleEl = document.getElementById('albumModalTitle');
+    var albumThumbs = document.getElementById('albumModalThumbs');
+    var albumClose = document.getElementById('albumModalClose');
+
+    function setAlbumMain(item) {
+      albumMain.innerHTML = '';
+      if (!item) return;
+      if (item.media_type === 'video') {
+        var v = document.createElement('video');
+        v.src = item.media_url;
+        v.controls = true;
+        v.playsInline = true;
+        v.muted = true;
+        v.autoplay = true;
+        v.className = 'w-full h-full object-contain';
+        albumMain.appendChild(v);
+      } else {
+        var img = document.createElement('img');
+        img.src = item.media_url;
+        img.alt = '';
+        img.className = 'w-full h-full object-contain';
+        albumMain.appendChild(img);
+      }
+    }
+
+    function openAlbum(idx) {
+      var a = albumData && albumData[idx];
+      if (!a || !a.media || !a.media.length) return;
+      albumTitleEl.textContent = a.title || 'Album';
+      setAlbumMain(a.media[0]);
+      albumThumbs.innerHTML = '';
+      a.media.forEach(function(item, i) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'w-full aspect-square rounded-lg overflow-hidden border-2 border-slate-200 hover:border-blue-500 focus:border-blue-500 focus:outline-none bg-white';
+        if (item.media_type === 'video') {
+          var vv = document.createElement('video');
+          vv.src = item.media_url;
+          vv.muted = true;
+          vv.playsInline = true;
+          vv.className = 'w-full h-full object-cover';
+          b.appendChild(vv);
+        } else {
+          var ii = document.createElement('img');
+          ii.src = item.media_url;
+          ii.alt = '';
+          ii.className = 'w-full h-full object-cover';
+          b.appendChild(ii);
+        }
+        b.addEventListener('click', function() {
+          setAlbumMain(item);
+          albumThumbs.querySelectorAll('button').forEach(function(x, xi) {
+            x.classList.toggle('border-blue-500', xi === i);
+            x.classList.toggle('border-slate-200', xi !== i);
+          });
+        });
+        if (i === 0) b.classList.add('border-blue-500');
+        albumThumbs.appendChild(b);
+      });
+      albumModal.classList.remove('hidden');
+      albumModal.classList.add('flex');
+      albumModal.setAttribute('aria-hidden', 'false');
+    }
+
+    function closeAlbum() {
+      albumModal.classList.add('hidden');
+      albumModal.classList.remove('flex');
+      albumModal.setAttribute('aria-hidden', 'true');
+      var v = albumMain.querySelector('video');
+      if (v) v.pause();
+    }
+
+    document.querySelectorAll('[data-album]').forEach(function(el) {
+      el.addEventListener('click', function() { openAlbum(parseInt(el.getAttribute('data-album'), 10)); });
+    });
+    if (albumClose) albumClose.addEventListener('click', closeAlbum);
+    if (albumModal) albumModal.addEventListener('click', function(e) { if (e.target === albumModal) closeAlbum(); });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && albumModal && albumModal.classList.contains('flex')) closeAlbum();
+    });
+  })();
+  </script>
+</body>
+</html>
