@@ -95,50 +95,11 @@
   </section>
 
   
-    <section class="py-12 md:py-16 px-4 bg-white">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-2xl md:text-3xl font-semibold text-center mb-10">Amenities</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="amenity-card group bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200/80 flex flex-col w-full text-center cursor-pointer hover:shadow-xl transition-shadow" data-offer="1" role="button" tabindex="0">
-          <h3 class="text-base font-semibold text-slate-900 text-center py-3 px-3 bg-slate-50 rounded-t-2xl border-b border-slate-200/60">test</h3>
-          <div class="relative">
-                          <img src="assets/uploads/Screenshot_2026-03-10_175747_1780649587.png" alt="test" class="w-full aspect-[9/16] object-cover rounded-b-2xl">
-                        <div class="absolute inset-0 bg-black/70 rounded-b-2xl flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <h3 class="text-lg font-semibold text-white">test</h3>
-              <p class="text-sm text-white/90 mt-1 line-clamp-3">test test test</p>
-            </div>
-          </div>
-        </div>
-              </div>
-    </div>
-  </section>
   
     <section class="py-12 md:py-16 px-4 bg-white">
     <div class="max-w-4xl mx-auto">
       <h2 class="text-2xl md:text-3xl font-semibold text-center mb-10">Offers</h2>
-            <div class="relative">
-        <div id="offersCarousel" class="overflow-hidden">
-          <div id="offersSlides" class="flex transition-transform duration-500 ease-out" style="width: 100%;">
-                          <div class="offers-card flex-shrink-0 px-2 flex justify-center" style="width: 100%;">
-                <div class="group bg-white rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.12)] overflow-hidden border border-slate-200/80 flex flex-col w-full max-w-[280px] cursor-pointer mx-auto" data-offer="2" role="button" tabindex="0">
-                  <h3 class="text-base font-semibold text-slate-900 text-center py-3 px-3 bg-slate-50 rounded-t-2xl border-b border-slate-200/60">test</h3>
-                  <div class="relative">
-                                          <img src="assets/uploads/Screenshot_2026-03-10_175747_1780649756.png" alt="test" class="w-full aspect-[9/16] object-cover rounded-b-2xl">
-                                        <div class="absolute inset-0 bg-black/70 rounded-b-2xl flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <h3 class="text-lg font-semibold text-white">test</h3>
-                      <p class="text-sm text-white/90 mt-1 line-clamp-3">12345</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-                      </div>
-        </div>
-        <button type="button" id="offersPrev" class="offers-nav absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 md:-translate-x-4 w-10 h-10 rounded-full bg-white shadow-lg border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-slate-50 transition z-10" aria-label="Previous"><span class="text-xl leading-none">‹</span></button>
-        <button type="button" id="offersNext" class="offers-nav absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 md:translate-x-4 w-10 h-10 rounded-full bg-white shadow-lg border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-slate-50 transition z-10" aria-label="Next"><span class="text-xl leading-none">›</span></button>
-      </div>
-      <div class="flex justify-center gap-2 mt-6" id="offersDots">
-                  <button type="button" class="offers-dot w-2.5 h-2.5 rounded-full transition bg-blue-600" id="offersDot0" aria-label="Go to slide 1"></button>
-              </div>
+      <p class="text-center text-slate-500 text-sm">No offers added yet for this developer.</p>
     </div>
   </section>
   
@@ -198,8 +159,8 @@
   <script src="script.js"></script>
   <script>
   (function() {
-    var offerData = {"1":{"kind":"amenity","title":"test","description":"test test test","contacts":[],"media":[{"type":"image","src":"assets\/uploads\/Screenshot_2026-03-10_175747_1780649587.png"}]},"2":{"kind":"offer","title":"test","description":"12345","contacts":[{"contact_person":"sir","contact_type":"whatsapp","contact_value":"09055242690"}],"media":[{"type":"image","src":"assets\/uploads\/Screenshot_2026-03-10_175747_1780649756.png"},{"type":"image","src":"assets\/uploads\/Screenshot_2025-02-10_183401_1780649774.png"},{"type":"image","src":"assets\/uploads\/Screenshot_2025-02-10_183446_1780649774.png"},{"type":"image","src":"assets\/uploads\/Screenshot_2025-02-10_183533_1780649774.png"},{"type":"image","src":"assets\/uploads\/Screenshot_2025-10-23_145259_1780649774.png"},{"type":"image","src":"assets\/uploads\/Screenshot_2025-10-23_145404_1780649774.jpg"},{"type":"image","src":"assets\/uploads\/Screenshot_2025-10-23_145428_1780649774.jpg"},{"type":"image","src":"assets\/uploads\/Screenshot_2025-10-23_145545_1780649775.jpg"},{"type":"image","src":"assets\/uploads\/Screenshot_2026-03-10_175747_1780649775.png"}]}};
-    var numCards = 1;
+    var offerData = [];
+    var numCards = 0;
 
     if (numCards > 0) {
       var carousel = document.getElementById('offersCarousel');
